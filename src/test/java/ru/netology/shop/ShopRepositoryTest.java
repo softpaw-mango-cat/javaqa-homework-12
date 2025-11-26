@@ -23,7 +23,7 @@ public class ShopRepositoryTest {
         repo.add(product2);
         repo.add(product3);
     }
-    
+
     @Test
     public void shouldRemoveExistingProduct() {
         repo.remove(1);

@@ -51,13 +51,11 @@
                         <goals>
                             <goal>report</goal>
                         </goals>
-                        <!-- добавить, если нужно исключить из отчёта классы/методы классов -->
-                        <!-- <configuration>
+                        <configuration>
                             <excludes>
-                                <exclude>**/ru/netology/.../Classname.class</exclude>
-                                <exclude>**/ru/netology/.../Classname.class:get*</exclude>
+                                <exclude>**/ru/netology/shop/Product.class</exclude>
                             </excludes>
-                        </configuration> -->
+                        </configuration>
                     </execution>
                     <execution>
                         <id>check</id>
@@ -81,11 +79,9 @@
                                     </limits>
                                 </rule>
                             </rules>
-                            <!-- ещё один блок со всеми исключениями из проверки -->
-                            <!--  <excludes>
-                                <exclude>**/ru/netology/.../Classname.class</exclude>
-                                <exclude>ru/netology/.../Classname.class:get*</exclude>
-                            </excludes> -->
+                            <excludes>
+                                <exclude>**/ru/netology/shop/Product.class</exclude>
+                            </excludes>
                         </configuration>
                     </execution>
                 </executions>
